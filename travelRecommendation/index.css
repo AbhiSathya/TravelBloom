@@ -8,73 +8,106 @@ body {
     background-image: url('./Images/Taj_Mahal.jpg');
     background-size: cover;
     background-position: center;
+    font-family: Arial, sans-serif;
 }
 
 nav {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 10px;
 }
 
 nav a {
-    padding: 7px 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: gray;
+    background-color: #f0f0f0;
 }
+
 button {
-    padding: 7px 15px;
+    padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #45a049;
+}
 
-  }
-  
-
-div#main {
+#main {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
-
+    text-align: center;
+    padding: 20px;
 }
 
 #intro-p1 {
-    font-size: 50px;
-    text-align: center;
-
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold font weight */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for better contrast */
 }
 
 #intro-p2 {
-    width: 500px;
-    font-size: 20px;
-    text-align: center;
-    text-wrap:balance;
-    text-decoration: solid;
-    font-weight: bold;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #140d0d; /* Text color */
+}
 
+
+.recommendation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#result {
+    background-color: rgba(0, 128, 128, 0.1); /* Semi-transparent background color */
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+#result img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
